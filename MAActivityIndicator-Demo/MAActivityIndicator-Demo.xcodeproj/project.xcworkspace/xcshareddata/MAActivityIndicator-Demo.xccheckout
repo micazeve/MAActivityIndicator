@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFB88AFF-19C5-4FFB-9B86-3BF932CEF484</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MAActivityIndicator-Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AB54501086175CFAE7D55CA160BC2F7C6EA83805</key>
+		<string>https://github.com/micazeve/MAActivityIndicator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MAActivityIndicator-Demo/MAActivityIndicator-Demo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AB54501086175CFAE7D55CA160BC2F7C6EA83805</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/micazeve/MAActivityIndicator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AB54501086175CFAE7D55CA160BC2F7C6EA83805</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AB54501086175CFAE7D55CA160BC2F7C6EA83805</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MAActivityIndicator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
