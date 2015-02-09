@@ -1,0 +1,2 @@
+# MAActivityIndicator
+Dot activity indicator
