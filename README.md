@@ -1,5 +1,7 @@
 ## MAActivityIndicator
 
+![Screenshot1](Screenshots/Screenshot1.png "Screenshot1") ![Screenshot2](Screenshots/Screenshot2.png "Screenshot2")
+
 MAActivityIndicator is a custom activity indicator with little dots written in Swift. 
 All the credit goes to [mownier](https://github.com/mownier/) for the [original indicator view](https://github.com/mownier/MONActivityIndicatorView) in objective C.
 
