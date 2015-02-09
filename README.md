@@ -1,6 +1,7 @@
 ## MAActivityIndicator
 
 MAActivityIndicator is a custom activity indicator with little dots written in Swift. 
+All the credit goes to [mownier](https://github.com/mownier/) for the [original indicator view](https://github.com/mownier/MONActivityIndicatorView) in objective C.
 
 ![MAActivityIndicator](Screenshots/dots.png "MAActivityIndicator")
 
