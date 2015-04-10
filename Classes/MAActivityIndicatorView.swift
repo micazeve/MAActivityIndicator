@@ -125,7 +125,7 @@ class MAActivityIndicatorView: UIView {
     
     // MARK: - override
     
-    convenience override init () {
+    convenience init () {
         self.init(frame:CGRectMake(0, 0, 100, 50))
     }
     
@@ -233,7 +233,7 @@ class MAActivityIndicatorView: UIView {
     // Update the animation for the circles
     private func updateCirclesanimations () {
         for i in 0..<subviews.count {
-            let subview = subviews[i] as UIView
+            let subview = subviews[i] as! UIView
             subview.layer .removeAnimationForKey("scale")
             subview.layer.addAnimation(self.createAnimationWithDuration(duration, delay: Double(i)*delay), forKey: "scale")
         }
@@ -241,7 +241,7 @@ class MAActivityIndicatorView: UIView {
     
     /// Remove the circles
     private func removeCircles () {
-        for subview in subviews as [UIView] {
+        for subview in subviews as! [UIView] {
             subview.removeFromSuperview()
         }
     }
