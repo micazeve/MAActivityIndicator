@@ -9,14 +9,14 @@
 import UIKit
 
 
-@objc protocol MAActivityIndicatorViewDelegate
+@objc public protocol MAActivityIndicatorViewDelegate
 {
     func activityIndicatorView(activityIndicatorView: MAActivityIndicatorView,
         circleBackgroundColorAtIndex index: NSInteger) -> UIColor
     
 }
 
-class MAActivityIndicatorView: UIView {
+public class MAActivityIndicatorView: UIView {
 
     
     // MARK: - Private properties
@@ -44,21 +44,21 @@ class MAActivityIndicatorView: UIView {
     private let minRadius:CGFloat           = 2
     
     /// Default color of each circle
-    private var _defaultColor                        = UIColor.lightGrayColor()
+    private var _defaultColor               = UIColor.lightGrayColor()
     
     /// An indicator whether the activity indicator view is animating or not.
-    private var isAnimating         = false
+    private(set) public var isAnimating     = false
   
     
     // MARK: - Public properties
     
     /// Delegate, used to chose the color of each circle.
-    var delegate:MAActivityIndicatorViewDelegate?
+    public var delegate:MAActivityIndicatorViewDelegate?
     
     //MARK: - Public computed properties
     
     /// The number of circle indicators.
-    var numberOfCircles:Int {
+    public var numberOfCircles:Int {
         get {
             return _numberOfCircles
         }
@@ -70,7 +70,7 @@ class MAActivityIndicatorView: UIView {
     }
     
     /// Default color of each circle
-    var defaultColor:UIColor {
+    public var defaultColor:UIColor {
         get  {
             return _defaultColor
         }
@@ -81,7 +81,7 @@ class MAActivityIndicatorView: UIView {
     }
         
     /// Total animation duration
-    var animationDuration:Double {
+    public var animationDuration:Double {
         get {
             return _animationDuration
         }
@@ -95,7 +95,7 @@ class MAActivityIndicatorView: UIView {
     }
     
     /// The maximum radius of each circle.
-    var maxRadius:CGFloat {
+    public var maxRadius:CGFloat {
         get {
             return _maxRadius
         }
@@ -109,7 +109,7 @@ class MAActivityIndicatorView: UIView {
     }
     
     /// The spacing between circles.
-    var internalSpacing:CGFloat {
+    public var internalSpacing:CGFloat {
         get {
             return _internalSpacing
         }
@@ -125,22 +125,22 @@ class MAActivityIndicatorView: UIView {
     
     // MARK: - override
     
-    convenience init () {
+    public convenience init () {
         self.init(frame:CGRectMake(0, 0, 100, 50))
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupDefaults()
     }
     
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupDefaults()
     }
     
-    override func translatesAutoresizingMaskIntoConstraints() -> Bool {
+    public override func translatesAutoresizingMaskIntoConstraints() -> Bool {
         return false
     }
 
@@ -257,7 +257,7 @@ class MAActivityIndicatorView: UIView {
     
     //MARK: - public methods
     
-    func startAnimating () {
+    public func startAnimating () {
         if !isAnimating {
             addCircles()
             hidden = false
@@ -265,7 +265,7 @@ class MAActivityIndicatorView: UIView {
         }
     }
     
-    func stopAnimating () {
+    public func stopAnimating () {
         if isAnimating {
             removeCircles()
             hidden = true
