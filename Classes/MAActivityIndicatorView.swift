@@ -136,7 +136,8 @@ class MAActivityIndicatorView: UIView {
     
     
     required init(coder aDecoder: NSCoder) {
-        fatalError("This class does not support NSCoding")
+        super.init(coder: aDecoder)
+        setupDefaults()
     }
     
     override func translatesAutoresizingMaskIntoConstraints() -> Bool {
