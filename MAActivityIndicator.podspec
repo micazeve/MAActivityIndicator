@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/micazeve"
   s.platforms	 = { :ios => "8.0" }
 
-  s.source       = { :git => "https://github.com/micazeve/MAActivityIndicator.git", :branch => "master" }
+  s.source       = { :git => "https://github.com/micazeve/MAActivityIndicator.git", :branch => "master", :tag => '0.1'}
   s.source_files = "Classes/**/*.swift"
 
   s.ios.deployment_target = '8.0'
