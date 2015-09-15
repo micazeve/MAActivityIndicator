@@ -1,4 +1,7 @@
 ## MAActivityIndicator
+[![Version](https://img.shields.io/cocoapods/v/MAActivityIndicator.svg?)](http://cocoapods.org/pods/MAActivityIndicator)
+[![License](https://img.shields.io/cocoapods/l/MAActivityIndicator.svg)](http://cocoapods.org/pods/MAActivityIndicator)
+[![Platform](https://img.shields.io/cocoapods/p/MAActivityIndicator.svg)](http://cocoapods.org/pods/MAActivityIndicator)
 
 ![Screenshot1](Screenshots/Screenshot1.png "Screenshot1") ![Screenshot2](Screenshots/Screenshot2.png "Screenshot2")
 
